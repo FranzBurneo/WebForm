@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        @media print{
+            @page{
+                margin: 20px auto;
+            }
+        }
+        body{
+            text-align: center;
+            font-size: 7pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, tr, td, th{
+            border: 0.1em solid black;
+            border-collapse: collapse;
+        }
+        table{
+            margin-bottom: 4px;
+            width: 700px;
+        }
+        .noBorder{
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+    <table style="margin-bottom: 10px;">
+        <tr>
+            <th>
+                INSTITUCIÓN DEL SISTEMA
+            </th>
+            <th style="width: 140px;">
+                UNIDAD OPERATIVA
+            </th>
+            <th style="width: 60px;">
+                COD.UO
+            </th>
+            <th colspan="3">
+                COD.LOCALIZACION
+            </th>
+            <th rowspan="2" style="width: 100px;">
+                NUMERO DE <br>HISTORIA CLÍNICA
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2" style="padding: 0 5px;">
+                MINISTERIO DE SALUD <br>PÚBLICA
+            </th>    
+            <th rowspan="2">
+                HOSPITAL GENERAL <br>"ISIDRO AYORA" DE LOJA
+            </th>
+            <td rowspan="2">
+                $codeuo$
+            </td>
+            <th style="width: 65px;">
+                PARROQUIA
+            </th>
+            <th style="width: 65px;">
+                CANTON
+            </th>
+            <th style="width: 65px;">
+                PROVINCIA
+            </th>
+        </tr>
+        <tr>
+            <td>
+                SUCRE
+            </td>
+            <td>
+                LOJA
+            </td>
+            <td>
+                LOJA
+            </td>
+            <td>
+                $num_his_clin$
+            </td>
+        </tr>        
+    </table>
+    <table>
+        <tr>
+            <td>
+                APELLIDO PATERNO
+            </td>
+            <td>
+                APELLIDO MATERNO
+            </td>
+            <td>
+                NOMBRES
+            </td>
+            <td>
+                SERVICIO
+            </td>
+            <td>
+                SALA
+            </td>
+            <td>
+                CAMA
+            </td>
+            <td>
+                FECHA
+            </td>
+            <td>
+                HORA
+            </td>
+        </tr>
+        <tr>
+            <td>
+                $apellido_p$
+            </td>
+            <td>
+                $apellido_m$
+            </td>
+            <td style="width: 170px;">
+                $nombres$
+            </td>
+            <td>
+                $servicio$
+            </td>
+            <td>
+                $sala$
+            </td>
+            <td>
+                $cama$
+            </td>
+            <td>
+                $fecha$
+            </td>
+            <td>
+                $hora$
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                1 AUTORIZACIÓN PARA CIRUGÍA, TRATAMIENTO CLÍNICO O PROCEDIMIENTO DIAGNÓSTICO
+            </th>
+        </tr>        
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                AUTORIZO AL PERSONAL TRATANTE DE ESTE ESTABLECIMIENTO DE SALUD PARA REALIZAR LAS OPERACIONES QUIRURGICAS, PROCEDIMIENTOS DIAGNÓSTICOS Y<br>
+                TRATAMIENTOS CLÍNICOS PROPUESTOS Y NECESARIOS PARA EL TRATAMIENTO DE MI ENFERMEDAD
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL PACIENTE
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                $nombres_completos$
+            </td>
+            <td style="width: 18%;">
+                $telefono$
+            </td>
+            <td style="width: 18%;">
+                $cedula$
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL REPRESENTANTE LEGAL O TESTIGO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                $nombres_rep_leg$
+            </td>
+            <td style="width: 10%;">
+                $parentesco$
+            </td>
+            <td style="width: 18%;">
+                $telefono_rep$
+            </td>
+            <td style="width: 18%;">
+                $cedula_rep$
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                2 EXONERACIÓN DE RESPONSABILIDAD POR ABORTO
+            </th>
+        </tr>        
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                DECLARO QUE NINGÚN PROFESIONAL O FUNCIONARIO DE ESTE ESTABLECIMIENTO DE SALUD,HA REALIZADO PROCEDIMIENTOS PARA PROVOCAR ESTE ABORTO Y QUE <br>
+                INGRESO LIBRE Y VOLUNTARIAMENTE PARA RECIBIR EL TRATAMIENTO NECESARIO PARA MI ENFERMEDAD
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL PACIENTE
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL REPRESENTANTE LEGAL O TESTIGO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+
+            </td>
+            <td style="width: 10%;">
+
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                3 EXONERACIÓN DE RESPONSABILIDAD POR ABANDONO DEL HOSPITAL SIN AUTORIZACIÓN MÉDICA
+            </th>
+        </tr>        
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                DECLARO QUE ME RETIRO VOLUNTARIAMENTE DE ESTE ESTABLECIMIENTO DE SALUD Y EXONERO AL PROFESIONAL TRATANTE Y AL PERSONAL ADMINISTRATIVO POR LOS <br>
+                RIESGOS QUE ME HAN ADVERTIDO CLARAMENTE
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL PACIENTE
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL TESTIGO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL PROFESIONAL DE LA SALUD
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                4 RETIRO DE MENOR DE EDAD O PERSONA INCAPACITADA
+            </th>
+        </tr>        
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                DECLARO QUE RETIRO AL PACIENTE DE ESTE ESTABLECIMIENTO DE SALUD, BAJO MI RESPONSABILIDAD DEBIDAMENTE CERTIFICADA, CON LA AUTORIZACIÓN MÉDICA <br>
+                CORRESPONDIENTE
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr> 
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                DECLARO QUE RETIRO AL PACIENTE DE ESTE ESTABLECIMIENTO, BAJO MI RESPONSABILIDAD Y SIN LA AUTORIZACIÓN DEL PROFESIONAL TRATANTE, HE SIDO ADVERTIDO DE <br>
+                LAS CONSECUENCIAS DE ESTE ACTO NO AUTORIZADO Y ASUMO TODA LA RESPONSABILIDAD POR LAS CONSECUENCIAS NEGATIVAS
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL REPRESENTANTE LEGAL
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL TESTIGO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL MÉDICO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    <table>
+        <tr>
+            <th colspan="5" style="font-size: 10pt; text-align: left;">
+                5 AUTORIZACIÓN DE EXTRACCIÓN DE ÓRGANOS PARA DONACIÓN Y/O TRASPLANTE
+            </th>
+        </tr>        
+        <tr>
+            <td colspan="4" style="font-size: 6pt; padding: 0; text-align: left;">
+                AUTORIZO AL PERSONAL DE SALUD DE ESTE ESTABLECIMIENTO PARA QUE EN VIDA SE ME EXTRAIGA EL O LOS ÓRGANOS CONVENIDOS, DONADOS PARA EL TRASPLANTE EN <BR>
+                EL RECEPTOR SEÑALADO
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr> 
+        <tr>
+            <td colspan="4"  style="font-size: 6pt; padding: 0; text-align: left;">
+                AUTORIZO QUE UNA VEZ TRANSCURRIDAS 48 HOORAS DE MI MUERTE CEREBRAL, MIS ÓRGANOS SEAN EXTRAIDOS PARA TRASPLANTE
+            </td>
+            <td style="width: 20px;">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 16%; text-align: left;">
+                ORGANOS DONADOS
+            </td>
+            <td style="width: 25%;">
+
+            </td>
+            <td>
+                NOMBRE DE LOS RECEPTORES
+            </td>
+            <td style="width: 40%;">
+
+            </td>
+            <td style="width: 20px; border-left : hidden!important; " >
+
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL REPRESENTANTE LEGAL
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL TESTIGO
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder">
+                NOMBRE DEL PROFESIONAL TRATANTE
+            </td>
+            <td class="noBorder" style="width: 10%;">
+                
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                TELEFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt;">
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: right;">MARCAR UNA "X" EN LA CELDA QUE CORRESPONDA</p>
+    <table>
+        <tr>
+            <th colspan="6" style="font-size: 10pt; text-align: left;">
+                6 AUTORIZACIÓN PARA NECROPSIA
+            </th>
+        </tr>        
+        <tr>
+            <td colspan="4" style="font-size: 6pt; padding: 0; text-align: left;">
+                AUTORIZO AL MÉDICO AUTORIZADO DE ESTE HOSPITAL PARA QUE PRACTIQUE LA NECROPSIA AL CADAVER DEL FALLECIDO
+            </td>
+            <td style="width: 100px; border-left: hidden !important;">
+
+            </td>
+            <td style="width: 20px !important; ">
+
+            </td>
+        </tr>  
+        <tr >
+            <td >
+                NOMBRE DEL REPRESENTANTE LEGAL
+            </td>
+            <td  style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td  style="width: 18%;">
+                TELEFONO
+            </td>
+            <td  style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td colspan="2" style="width: 18%;">
+                FIRMA
+            </td>
+            <tr>
+                <td style="height: 20px;">
+                    
+                </td>
+                <td style="width: 10%;">
+                    
+                </td>
+                <td style="width: 18%;">
+                    
+                </td>
+                <td style="width: 18%;">
+                    
+                </td>
+                <td colspan="2" style="width: 18%;">
+                    
+                </td>
+            </tr>
+        </tr>  
+        <tr >
+            <td >
+                NOMBRE DEL TESTIGO
+            </td>
+            <td  style="width: 10%;">
+                PARENTESCO
+            </td>
+            <td  style="width: 18%;">
+                TELEFONO
+            </td>
+            <td  style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td colspan="2" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>  
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td colspan="2" style="width: 18%;">
+                
+            </td>
+        </tr>  
+        <tr >
+            <td >
+                NOMBRE DEL MÉDICO 
+            </td>
+            <td  style="width: 10%;">
+                
+            </td>
+            <td  style="width: 18%;">
+                TELEFONO
+            </td>
+            <td  style="width: 18%;">
+                CEDULA DE CIUDADANIA
+            </td>
+            <td colspan="2" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 20px;">
+                
+            </td>
+            <td style="width: 10%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+            <td colspan="2" style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <div style="margin-top: -4px; margin-bottom: 0em; display: flex;">
+        <div style="text-align: left !important; width: 50%;"><b>SNS-MSP / HCU-form.24 / 2008</b></div>
+        <div style="text-align: right !important; width: 50%; float: left; font-size: 9pt;"><b>AUTORIZACIÓN, EXONERACIÓN Y RETIRO</b></div>
+    </div>
+    <table style="margin-bottom: 10px; page-break-before: always">
+        <tr>
+            <th>
+                INSTITUCIÓN DEL SISTEMA
+            </th>
+            <th style="width: 140px;">
+                UNIDAD OPERATIVA
+            </th>
+            <th style="width: 60px;">
+                COD.UO
+            </th>
+            <th colspan="3">
+                COD.LOCALIZACION
+            </th>
+            <th rowspan="2" style="width: 100px;">
+                NUMERO DE <br>HISTORIA CLÍNICA
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2" style="padding: 0 5px;">
+                MINISTERIO DE SALUD <br>PÚBLICA
+            </th>    
+            <th rowspan="2">
+                HOSPITAL GENERAL <br>"ISIDRO AYORA" DE LOJA
+            </th>
+            <td rowspan="2">
+                $codeuo$
+            </td>
+            <th style="width: 65px;">
+                PARROQUIA
+            </th>
+            <th style="width: 65px;">
+                CANTON
+            </th>
+            <th style="width: 65px;">
+                PROVINCIA
+            </th>
+        </tr>
+        <tr>
+            <td>
+                SUCRE
+            </td>
+            <td>
+                LOJA
+            </td>
+            <td>
+                LOJA
+            </td>
+            <td>
+                $num_his_clin$
+            </td>
+        </tr>        
+    </table>
+    <table>
+        <tr>
+            <th>
+                APELLIDO PATERNO
+            </th>
+            <th>
+                APELLIDO MATERNO
+            </th>
+            <th>
+                NOMBRES
+            </th>
+            <th>
+                SERVICIO
+            </th>
+            <th>
+                SALA
+            </th>
+            <th>
+                CAMA
+            </th>
+            <th>
+                FECHA
+            </th>
+            <th>
+                HORA
+            </th>
+        </tr>
+        <tr>
+            <td>
+                $apellido_p$
+            </td>
+            <td>
+                $apellido_m$
+            </td>
+            <td style="width: 170px;">
+                $nombres$
+            </td>
+            <td>
+                $servicio$
+            </td>
+            <td>
+                $sala$
+            </td>
+            <td>
+                $cama$
+            </td>
+            <td>
+                $fecha$
+            </td>
+            <td>
+                $hora$
+            </td>
+        </tr>
+    </table>
+    <p style="margin-top: -4px; margin-bottom: 0em; text-align: left;"><b>TODA LA INFORMACIÓN ENTREGADA POR LOS PROFESIONALES AL PACIENTE EN EL AMBITO DE LA CONFIDENCIALIDAD</b>
+    </p>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                1 INFORMACIÓN ENTREGADA POR EL PROFESIONAL TRATANTE SOBRE EL TRATAMIENTO
+            </th>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                PROPÓSITOS 
+            </th>
+            <th>
+                TERAPIA Y PROCEDIMIENTOS PROPUESTOS
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $proposito1$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $terapia1$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $proposito2$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $terapia2$
+            </td>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                RESULTADOS ESPERADOS 
+            </th>
+            <th>
+                RIESGOS DE COMPLICACIONES CLÍNICAS
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $resultado1$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $riesgo1$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $resultado2$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $riesgo2$
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder" style="width: 33%">
+                NOMBRE DEL PROFESIONAL TRATANTE
+            </td>
+            <td class="noBorder" style="width: 13%;">
+                ESPECIALIDAD
+            </td>
+            <td class="noBorder" style="width: 16%;">
+                TELÉFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CÓDIGO
+            </td>
+            <td class="noBorder">
+                
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt; margin-bottom: 10px;">
+        <tr>
+            <td style="height: 20px; width:33%">
+                $tratante$
+            </td>
+            <td style="width: 13%;">
+                $especialidad_trt$
+            </td>
+            <td style="width: 16%;">
+                $telefono_trt$
+            </td>
+            <td style="width: 18%;">
+                $codigo_trt$
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+            <td style="width: 18%;">
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                2 INFORMACIÓN ENTREGADA POR EL CIRUJANO SOBRE LA INTERVENCIÓN QUIRÚRGICA
+            </th>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                PROPÓSITOS 
+            </th>
+            <th>
+                INTERVENCIONES QUIRÚRGICAS PROPUESTAS 
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $proposito3$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $intervencion1$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $proposito4$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $intervencion2$
+            </td>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                RESULTADOS ESPERADOS 
+            </th>
+            <th>
+                RIESGOS DE COMPLICACIONES QUIRÚRGICAS
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $resultado3$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $riesgo3$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $resultado4$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $riesgo4$
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder" style="width: 33%">
+                NOMBRE DEL CIRUJANO
+            </td>
+            <td class="noBorder" style="width: 13%;">
+                ESPECIALIDAD
+            </td>
+            <td class="noBorder" style="width: 16%;">
+                TELÉFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CÓDIGO
+            </td>
+            <td class="noBorder">
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt; margin-bottom: 10px;">
+        <tr>
+            <td style="height: 20px; width: 33%">
+                $cirujano$
+            </td>
+            <td style="width: 13%;">
+                $especialidad_crj$
+            </td>
+            <td style="width: 16%;">
+                $telefono_crj$
+            </td>
+            <td style="width: 18%;">
+                $codigo_crj$
+            </td>            
+            <td style="border-top: hidden; border-bottom: hidden;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: 12px;">
+        <tr>
+            <th colspan="2" style="font-size: 10pt; text-align: left;">
+                3 INFORMACIÓN ENTREGADA POR EL ANESTESIÓLOGO SOBRE LA ANESTESIA
+            </th>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                PROPÓSITOS
+            </th>
+            <th>
+                ANESTESIA PROPUESTA
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $proposito4$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $anestesia1$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $proposito5$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $anestesia2$
+            </td>
+        </tr>
+        <tr>
+            <th style="width: 50%;">
+                RESULTADOS ESPERADOS 
+            </th>
+            <th>
+                RIESGOS DE COMPLICACIONES ANESTÉSICAS
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                 $resultado5$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                 $riesgo5$
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; height: 11px;">
+                $resultado6$
+            </td>
+            <td style="width: 50%; height: 11px;">
+                $riesgo6$
+            </td>
+        </tr>
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder">
+            <td class="noBorder" style="width: 33%">
+                NOMBRE DEL ANESTESIÓLOGO
+            </td>
+            <td class="noBorder" style="width: 13%;">
+                ESPECIALIDAD
+            </td>
+            <td class="noBorder" style="width: 16%;">
+                TELÉFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CÓDIGO
+            </td>
+            <td class="noBorder">
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt; margin-bottom: 10px;">
+        <tr>
+            <td style="height: 20px; width: 33%">
+                $anestesiologo$
+            </td>
+            <td style="width: 13%;">
+                $especialidad_ans$
+            </td>
+            <td style="width: 16%;">
+                $telefono_ans$
+            </td>
+            <td style="width: 18%;">
+                $codigo_ans$
+            </td>            
+            <td style="border-top: hidden; border-bottom: hidden;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: 12px;">
+        <tr>
+            <th style="font-size: 10pt; text-align: left;">
+                4 CONSENTIMIENTO INFORMADO DEL PACIENTE
+            </th>
+        </tr>
+    </table>
+    <table style="font-weight: bold; margin-top: 12px;">
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                A
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                EL PROFESIONAL TRATANTE ME HA INFORMADO SATISFACTORIAMENTE ACERCA DE LOS MOTIVOS Y PROPÓSITOS DEL <br>
+                TRATAMIENTO PLANIFICADO PARA MI ENFERMEDAD.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden; width: 5px;"></td>
+            <td rowspan="3" style="width: 160px;">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 10px; border-left: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                B
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                EL PROFESIONAL TRATANTE ME HA EXPLICADO ADECUADAMENTE LAS ACTIVIDADES ESENCIALES QUE SE REALIZARÁN <br>
+                DURANTE EL TRATAMIENTO DE MI ENFERMEDAD.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 10px; border-left: hidden; border-right: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                C
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                CONSIENTO A QUE SE REALICEN LAS INTERVENCIONES QUIRÚRGICAS, PROCEDIMIENTOS DIAGNÓSTICOS Y <br>
+                TRATAMIENTOS NECESARIOS PARA MI ENFERMEDAD.
+
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+            <td rowspan="3" style="width: 160px;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 10px; border-left: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                D
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                CONSIENTO A QUE ME ADMINISTREN LA ANESTESIA PROPUESTA.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 10px; border-left: hidden; border-right: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                E
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                HE ENTENDIDO BIEN QUE EXISTE GARANTÍA DE LA CALIDAD DE LOS MEDIOS UTILIZADOS PARA EL TRATAMIENTO, PERO NO <br>
+                ACERCA DE LOS RESULTADOS.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+            <td rowspan="3" style="width: 160px;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 10px; border-left: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                F
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                HE COMPRENDIDO PLENAMENTE LOS BENEFICIOS Y LOS RIESGOS DE COMPLICACIONES DERIVADAS DEL TRATAMIENTO
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 10px; border-left: hidden; border-right: hidden;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                G
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                EL PROFESIONAL TRATANTE ME HA INFORMADO QUE EXISTE GARANTÍA DE RESPETO A MI INTIMIDAD, A MIS CREENCIAS <br>
+                RELIGIOSAS Y A LA CONFIDENCIALIDAD DE LA INFORMACIÓN (INCLUSIVE EN EL CASO DE VIH/SIDA).
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+            </td>
+            <td rowspan="5" style="width: 160px;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 10px; border-left: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                H
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                HE COMPRENDIDO QUE TENGO EL DERECHO DE ANULAR ESTE CONSENTIMIENTO INFORMADO EN EL MOMENTO QUE YO <br>
+                LO CONSIDERE NECESARIO.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 10px; border-left: hidden;">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px; border-right: hidden;">
+                I
+            </td>
+            <td style="text-align: left; font-size: 6pt;">
+                DECLARO QUÉ HE ENTREGADO AL PROFESIONAL TRATANTE INFORMACIÓN COMPLETA Y FIDEDIGNA SOBRE LOS <br>
+                ANTECEDENTES PERSONALES Y FAMILIARES DE MI ESTADO DE SALUD. ESTOY CONSCIENTE DE QUE MIS OMISIONES O <br>
+                DISTORSIONES DELIBERADAS DE LOS HECHOS PUEDEN AFECTAR LOS RESULTADOS DEL TRATAMIENTO.
+            </td>
+            <td style="border-top: hidden; border-bottom: hidden;">
+
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: 12px;">
+        <tr>
+            <th style="font-size: 10pt; text-align: left;">
+                5 CONSENTIMIENTO INFORMADO DEL REPRESENTANTE LEGAL
+            </th>
+        </tr>        
+        <tr>
+            <td  style="font-size: 6pt; padding: 0; text-align: left;">
+                COMO RESPONSABLE LEGAL DEL PACIENTE, QUÉ HA SIDO CONSIDERADO POR AHORA IMPOSIBILITADO PARA DECIDIR EN FORMA AUTÓNOMA SU CONSENTIMIENTO AUTORIZÓ LA <br>
+                REALIZACIÓN DEL TRATAMIENTO SEGÚN LA INFORMACIÓN ENTREGADA POR LOS PROFESIONALES DE LA SALUD EN ESTE DOCUMENTO.
+            </td>
+        </tr>        
+    </table>
+    <table class="noBorder" style="margin-top: -4px; font-size: 6pt;">
+        <tr class="noBorder" >
+            <td class="noBorder" style="width: 33%;">
+                NOMBRE DEL REPRESENTANTE LEGAL
+            </td>
+            <td class="noBorder" style="width: 13%;">
+                PARENTESCO
+            </td>
+            <td class="noBorder" style="width: 15%;">
+                TELÉFONO
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                CÉDULA DE CIUDADANIA
+            </td>
+            <td class="noBorder">
+                
+            </td>
+            <td class="noBorder" style="width: 18%;">
+                FIRMA
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top: -4px; font-size: 6pt; margin-bottom: 10px;">
+        <tr>
+            <td style="height: 20px; width: 33%;">
+                $nombres_rep_leg2$
+            </td>
+            <td style="width: 13%;">
+                $parentesco2$
+            </td>
+            <td style="width: 15%;">
+                $telefono_rep2$
+            </td>
+            <td style="width: 18%;">
+                $cedula_rep2$
+            </td>            
+            <td style="border-top: hidden; border-bottom: hidden;">
+                
+            </td>
+            <td style="width: 18%;">
+                
+            </td>
+        </tr>
+    </table>
+    <div style="margin-top: -10px; margin-bottom: 0em; display: flex;">
+        <div style="text-align: left !important; width: 50%;"><b>SNS-MSP / HCU-form.24 / 2008</b></div>
+        <div style="text-align: right !important; width: 50%; float: left; font-size: 9pt;"><b>CONSENTIMIENTO INFORMADO</b></div>
+    </div>
+    <div style="width: 100%; text-align: center; page-break-before: always; padding-top: 50px;">
+        <b>CONSENTIMIENTO INFORMADO EN LA PRACTICA ASISTENCIAL.</b><br />
+        <b>HOSPITAL ISIDRO AYORA LOJA.</b><br />
+        SERVICIO DE EMERGENCIA
+    </div>
+    <div>
+        <table style="width: 580px; margin-left: 10px; margin-top: 40px; margin-bottom: 18px;">
+            <tr >
+                <td style="width: 12%; text-align: right; border: hidden;" >
+                    Historia clínica: 
+                </td>
+                <td style="width: 42%; border-top: hidden;">
+                    $historia_clinica$
+                </td>
+                <td style="width: 1%; text-align: right; border: hidden;" >
+                    Fecha:
+                </td>
+                <td style="width: 40%; border-top: hidden; border-right: hidden;">
+                    $fecha$
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table style="margin-left: 10px; margin-bottom: 18px;">
+        <tr>
+            <td style="padding: 0.5em;">
+                Nombres
+            </td>
+            <td>
+                Apellidos paterno
+            </td>
+            <td>
+                Apellido materno
+            </td>
+            <td>
+                Edad
+            </td>
+            <td>
+                Sexo
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0.5em;">
+                $nombres$
+            </td>
+            <td>
+                $apellido_p$
+            </td>
+            <td>
+                $apellido_m$
+            </td>
+            <td>
+                $edad$
+            </td>
+            <td>
+                $sexo$
+            </td>
+        </tr>
+    </table>
+    <table style="width: 580px; margin-left: 10px; bottom: 18px;">
+        <tr >
+            <td style="text-align: left; border: hidden; width: 18%;" >
+                TIPO DE ATENCIÓN: 
+            </td>
+            <td style="text-align: right; border: hidden;" >
+                Ambulatoria:
+            </td>
+            <td style="width: 30%; border-top: hidden;">
+                $ambulatorio$
+            </td>
+            <td style="width: 1%; text-align: right; border: hidden;" >
+                Hospitalización:
+            </td>
+            <td style="width: 40%; border-top: hidden; border-right: hidden;">
+                $hospitalizacion$
+            </td>
+        </tr>
+    </table>
+    <table style="width: 570px; margin-left: 10px; -bottom: 18px;">
+        <tr >
+            <td style="width: 17%; text-align: left; border: hidden;" >
+                NOMBRE DEL DIAGNOSTICO CIE 10:
+            </td>
+            <td style="width: 40%; border-top: hidden; border-right: hidden; text-align: left; padding-left: 5px;">
+                $diag_cie1$
+            </td>
+        </tr>
+        <tr >
+            <td style="width: 17%; text-align: left; border: hidden;" >
+                
+            </td>
+            <td style="width: 40%; border-right: hidden; text-align: left; padding-left: 5px; padding-top: 18px;">
+                $diag_cie2$
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px;">
+        <tr>
+            <th style="text-align: left; padding: 5px;">
+                CONSENTIMIENTO PARA PROCEDIMIENTOS DIAGNÓSTICOS O TERAPÉUTICOS.
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: justify; border-top: hidden; padding-top: 10px; padding: 5px 5px 20px 5px;">
+                Pacientes que ingresan al servicio de emergencia están inmersos en la realización de procedimientos especiales para diagnósticos y 
+                su posterior tratamiento, todos estas acciones están envueltas en riesgos complicaciones como causas esperadas indicadas en la 
+                bibliografía médica. <br>
+                Usted tiene derecho a ser informado de estos riesgos complicaciones y beneficios de estos procedimientos que están inmersos en el 
+                accionar del médico en el servicio de emergencia. <br>
+                En caso de no aceptar las acciones médicas indicadas su patología se exacerbaría con posibilidad de fallecimiento 
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px;">
+        <tr>
+            <th style="text-align: left; border-bottom: hidden; padding: 5px;">
+                DECLARACIÓN DE CONSENTIMIENTO INFORMADO.
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding-top: 10px; padding-left: 5px;">
+                <table style="width: 60%;">
+                    <tr>
+                        <td style="border: hidden;">
+                            Fecha:
+                        </td>
+                        <td style="border-top: hidden; width: 40%;">
+                            $fecha$
+                        </td>
+                        <td style="border: hidden;">
+                            Hora:
+                        </td>
+                        <td style="width: 40%; border-top: hidden; border-right: hidden; ">
+                            $hora$
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: justify; border-top: hidden; padding: 10px 5px 40px 5px;">
+                He facilitado la información completa que conozco, y me ha sido solicitada, sobre los antecedentes personales, familiares y de mi
+                estado de salud. Soy consciente de que omitir estos datos puede afectar los resultados del tratamiento. Estoy de acuerdo con el
+                procedimiento que se me ha propuesto; he sido informado de las ventajas e inconvenientes del mismo; se me ha explicado de forma
+                clara en qué consiste, los beneficios y posibles riesgos del procedimiento. He escuchado, leído y comprendido la información recibida
+                y se me ha dado la oportunidad de preguntar sobre el procedimiento. He tomado consciente y libremente la decisión de autorizar el
+                procedimiento. Consiento que durante la intervención, me realicen otro procedimiento adicional, si es considerado necesario según el
+                juicio del profesional de la salud, para mi beneficio. También conozco que puedo retirar mi consentimiento cuando lo estime oportuno.
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td>
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            $nombres$
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            $cedula$
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del paciente
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del paciente o huella, según el caso
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr >
+            <td style="border-top: hidden; padding-top: 10px;">
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            $nombre_info$
+                        </td>
+                        <td style="border: hidden;">
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre de profesional que emite la información 
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma, sello y código del profesional de la salud
+
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 4px; text-align: left; padding-left: 5px;">
+                <b>Si el paciente no está en capacidad para firmar el consentimiento informado:</b>
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td style="padding-top: 10px;">
+                <Table style="width: 79%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            $nombres_rep_leg3$
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            $cedula_rep3$
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden;">
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del representante legal
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del representante legal
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 25px; padding-left: 5px;">
+                <table style="width: 31%; text-align: left;">
+                    <tr>
+                        <td style="border: hidden">
+                            Parentesco:
+                        </td>
+                        <td style="width: 80%; border-top: hidden; border-right: hidden;">
+                            $parentesco3$   
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px;">
+        <tr>
+            <th style="text-align: left; border-bottom: hidden; padding: 5px;">
+                NEGATIVA DEL CONSENTIMIENTO INFORMADO
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding-top: 10px; padding-left: 5px;">
+                <table style="width: 60%;">
+                    <tr>
+                        <td style="border: hidden;">
+                            Fecha:
+                        </td>
+                        <td style="border: hidden; width: 40%;">
+                            
+                        </td>
+                        <td style="border: hidden;">
+                            Hora:
+                        </td>
+                        <td style="width: 40%; border: hidden; border-right: hidden; ">
+                            
+                        </td>
+                    </tr>                    
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: justify; border-top: hidden; padding: 10px 5px 48px 5px;">
+                Una vez que he entendido claramente el procedimiento propuesto, así como las consecuencias posibles si no se realiza la
+                intervención, no autorizo y me niego a que se me realice el procedimiento propuesto y desvinculo de responsabilidades futuras de
+                cualquier índole al establecimiento de salud y al profesional sanitario que me atiende, por no realizar la intervención sugerida.
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td>
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del paciente
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del paciente o huella, según el caso
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px; page-break-before:always;">
+        <tr >
+            <td style="border-bottom: hidden; padding-top: 30px;">
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre de profesional que emite la información
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma, sello y código del profesional de la salud
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 4px; text-align: left; padding-left: 5px;">
+                <b>Si el paciente no está en capacidad para firmar el consentimiento informado:</b>
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td style="padding-top: 40px;">
+                <Table style="width: 79%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del representante legal 
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del representante legal
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding: 25px 0 25px 5px;">
+                <table style="width: 31%; text-align: left;">
+                    <tr>
+                        <td style="border: hidden">
+                            Parentesco:
+                        </td>
+                        <td style="width: 80%; border-top: hidden; border-right: hidden;">
+                            
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 4px; text-align: left; padding-left: 5px;">
+                Si el paciente no acepta el procedimiento sugerido por el profesional y se niega a firmar este acápite:
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td style="padding-top: 40px;">
+                <Table style="width: 79%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre completo de testigo 
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del testigo
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px;">
+        <tr>
+            <th style="text-align: left; border-bottom: hidden; padding: 5px;">
+                REVOCATORIA DE CONSENTIMIENTO INFORMADO
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: justify; border-top: hidden; padding-top: 10px; padding: 5px 5px 20px 5px;">
+                De forma libre y voluntaria, revoco el consentimiento realizado en fecha y manifiesto expresamente mi deseo de no continuar con el
+                procedimiento médico que doy por finalizado en esta fecha: <br>
+                Libero de responsabilidades futuras de cualquier índole al establecimiento de salud y al profesional sanitario que me atiende
+            </td>
+        </tr>
+        <tr style="border-top: hidden; ">
+            <td style="padding-top: 23px; padding-bottom: 20px;">
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del paciente
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del paciente o huella, según el caso
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 4px; text-align: left; padding-left: 5px;">
+                <b>Si el paciente no está en capacidad para firmar el consentimiento informado:</b>
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td style="padding-top: 40px;">
+                <Table style="width: 79%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del representante legal 
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del representante legal
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding: 25px 5px 5px 5px;">
+                <table style="width: 31%; text-align: left;">
+                    <tr>
+                        <td style="border: hidden">
+                            Parentesco:
+                        </td>
+                        <td style="width: 80%; border-top: hidden; border-right: hidden;">
+                               
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-left: 10px; margin-bottom: 18px; font-size: 8pt; margin-top: 18px;">
+        <tr>
+            <th style="text-align: left; border-bottom: hidden; padding: 5px;">
+                EXONERACIÓN DE RESPONSABILIDAD POR ABANDONO DE HOSPITAL SIN AUTORIZACIÓN MÉDICA.
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: justify; border-top: hidden; padding-top: 10px; padding: 5px 5px 20px 5px;">
+                Declaro que me retiro voluntariamente de este establecimiento de salud y exonero al profesional tratante y al personal administrativo
+                por los riesgos a la salud, que me han advertido claramente.
+            </td>
+        </tr>
+        <tr style="border-top: hidden; ">
+            <td style="padding-top: 23px; padding-bottom: 20px;">
+                <Table style="width: 84%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del paciente
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 50px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del paciente o huella, según el caso
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding-top: 4px; text-align: left; padding-left: 5px;">
+                <b>Si el paciente no está en capacidad para firmar el consentimiento informado:</b>
+            </td>
+        </tr>
+        <tr style="border-top: hidden;">
+            <td style="padding-top: 30px;">
+                <Table style="width: 79%; margin-left: 5px;">
+                    <tr>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden; height: 16px;">
+                            
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden;">
+                            
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+
+                        </td>
+                        <td style="border-top: hidden; border-left: hidden; border-right: hidden;">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Nombre del representante legal 
+                        </td>
+                        <td style="width: 20px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Cédula de ciudadanía
+                        </td>
+                        <td style="width: 40px; border: hidden;">
+
+                        </td>
+                        <td style="border-bottom: hidden; border-left: hidden; border-right: hidden;">
+                            Firma del representante legal
+                        </td>
+                    </tr>
+                </Table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: hidden; padding: 25px 5px 5px 5px;">
+                <table style="width: 31%; text-align: left;">
+                    <tr>
+                        <td style="border: hidden">
+                            Parentesco:
+                        </td>
+                        <td style="width: 80%; border-top: hidden; border-right: hidden;">
+                                                        
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
